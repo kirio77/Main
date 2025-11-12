@@ -19,7 +19,6 @@
     body {
       font-family: "Calibri", sans-serif;
       color: white;
-      /* Odstraněno background-image */
       animation: darkFade 8s ease-in-out infinite;
       margin: 0;
       padding: 20px;
@@ -44,6 +43,19 @@
 
     p, h1 {
       text-align: center;
+    }
+
+    .single-image {
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+    }
+
+    .single-image img {
+      max-width: 100%;
+      height: auto;
+      max-height: 200px;
+      object-fit: contain;
     }
 
     /* Responzivní zobrazení pro menší obrazovky */
@@ -85,10 +97,11 @@
     <img src="Pictures/QR.jpg" alt="Penize Dotace Prispevek" width="10%" height="10%" />
   </p>
   <p>
-    Živíme i kočičku Zrzinku, podívejte se, jak má nafouklé bříško hladem ☹ 
+    Živíme i kočičku Zrzinku, podívejte se, jak má nafouklé bříško hladem ☹
   </p>
-  <div class="images">
+  <div class="single-image">
     <img src="Pictures/zrzinka.jpg" alt="Zrzinka" />
   </div>
 </body>
+
 </html>
