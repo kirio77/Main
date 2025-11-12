@@ -7,15 +7,20 @@
   <title>Hrabalovi</title>
   <link rel="icon" href="Pictures/favicon.png" type="image/x-icon" />
   <style>
+    @keyframes darkFade {
+      0%, 100% {
+        background-color: #000000; /* čistá černá */
+      }
+      50% {
+        background-color: #222222; /* světlejší černá */
+      }
+    }
+
     body {
       font-family: "Calibri", sans-serif;
       color: white;
-      background-image: url("Pictures/BG1.jpg");
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-color: black;
+      /* Odstraněno background-image */
+      animation: darkFade 8s ease-in-out infinite;
       margin: 0;
       padding: 20px;
     }
@@ -43,9 +48,6 @@
 
     /* Responzivní zobrazení pro menší obrazovky */
     @media (max-width: 600px) {
-      body {
-        background-position: center top; /* lepší zobrazení postavičky na mobilu */
-      }
       .images {
         flex-direction: column;
       }
