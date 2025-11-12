@@ -52,10 +52,11 @@
     }
 
     .single-image img {
-      max-width: 100%;
+      width: 100%;
+      max-width: 500px;
       height: auto;
-      max-height: 200px;
       object-fit: contain;
+      display: block;
     }
 
     /* Responzivní zobrazení pro menší obrazovky */
@@ -71,10 +72,13 @@
 
       img[alt="Penize Dotace Prispevek"] {
         width: 50%;
-        max-width: 500px;
         height: auto;
-        object-fit: contain;
         display: block;
+        margin: 0 auto;
+      }
+
+      .single-image img {
+        max-width: 100%;
       }
     }
   </style>
@@ -101,7 +105,7 @@
     Živíme i kočičku Zrzinku, podívejte se, jak má nafouklé bříško hladem ☹
   </p>
   <div class="single-image">
-    <img src="Pictures/zrzinka2.jpg" alt="Zrzinka" />
+    <img src="Pictures/zrzinka.jpg" alt="Zrzinka" />
   </div>
 </body>
 
